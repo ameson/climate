@@ -46,18 +46,8 @@ main{
     transition: all 0.3s ease;
     overflow: hidden;
 }
-.circle-border {
-    display: inline-block; /* 使其成为块级元素以便设置宽高 */
-    width: 30px; /* 设置宽度 */
-    height: 30px; /* 设置高度 */
-    border: 2px solid #0e6ba8; /* 设置边框颜色和宽度 */
-    border-radius: 50%; /* 使其成为圆形 */
-    text-align: center; /* 使圆点居中 */
-    line-height: 30px; /* 使圆点垂直居中 */
-    margin-right: 8px; /* 添加右边距以分隔文本 */
-}
 
-
+/* 导航栏圆点样式 */
 .dot {
     width: 10px;
     height: 10px;
@@ -65,8 +55,8 @@ main{
     background-color: white;
     border: 3px solid  var(--nav-bg);
     box-shadow: 0 0 0 1px white;
-
 }
+
 .navbar:hover {
     width: 250px;
 }
@@ -96,7 +86,6 @@ main{
     flex-direction: column;
     gap: 1rem;
     width: 100%;
-
 }
 
 .nav-links a {
@@ -146,18 +135,7 @@ main{
     display: inline-block;
 }
 
-/* .navbar .submenu {
-    display: none;
-  
-    z-index: 1;
-
-}
-
-.navbar .dropdown:hover .submenu {
-    display: block;
-} */
-
-
+/* 子菜单样式 */
 .navbar .submenu {
     max-height: 0;
     overflow: hidden;
@@ -165,40 +143,11 @@ main{
     z-index: 1;
 }
 
-i.circle {
-    display: inline-block; /* 使其成为块级元素以便设置宽高 */
-    width: 16px; /* 设置宽度 */
-    height: 16px; /* 设置高度 */
-    border-radius: 50%; /* 使其成为圆形 */
-    background-color: transparent; /* 背景透明 */
-    position: relative; /* 为伪元素定位提供参考 */
-    margin-right: 8px; /* 添加右边距以分隔文本 */
+.navbar .dropdown:hover .submenu {
+    max-height: 200px; /* Adjust as needed */
 }
 
-i.circle::before {
-    content: ''; /* 使伪元素生效 */
-    position: absolute; /* 绝对定位 */
-    top: 0;
-    left: 0;
-    width: 100%; /* 使伪元素覆盖整个圆 */
-    height: 100%; /* 使伪元素覆盖整个圆 */
-    border: 2px solid #fff; /* 设置白色边框 */
-    border-radius: 50%; /* 使伪元素成为圆形 */
-    z-index: -1; /* 确保伪元素在文本后面 */
-}
-
-i.circle::after {
-    content: ''; /* 使伪元素生效 */
-    position: absolute; /* 绝对定位 */
-    top: -2px; /* 上移 2px 以形成间隔 */
-    left: -2px; /* 左移 2px 以形成间隔 */
-    width: calc(100% + 4px); /* 增加宽度以形成外层圆 */
-    height: calc(100% + 4px); /* 增加高度以形成外层圆 */
-    border: 1px solid #fff; /* 设置白色边框 */
-    border-radius: 50%; /* 使伪元素成为圆形 */
-    z-index: -2; /* 确保伪元素在文本后面 */
-}
-
+/* 子菜单项样式 */
 .nav-links .submenu  a {
     text-decoration: none;
     color: #0e6ba8;
@@ -214,19 +163,14 @@ i.circle::after {
     position: relative;
     height: 25px; /* 固定高度 */
     box-sizing: border-box;
-    
 }
 
 .nav-links .submenu  a:hover{
     color: #002c4e;
     background-color: #1178ba;
 }
-.navbar .dropdown:hover .submenu {
-    max-height: 200px; /* Adjust as needed */
-}
 
 /* 移动端样式调整 */
-
 @media (max-width: 768px) {
     body {
         padding-top: 70px;
@@ -351,11 +295,6 @@ i.circle::after {
     }
 }
 
-/* 隐藏移动端菜单按钮（在桌面版） */
-.menu-toggle {
-    display: none;
-}
-
 /* 主内容区域样式 */
 main {
     margin-left: 70px;
@@ -368,23 +307,12 @@ main {
     width: calc(100% - 250px);
 }
 
-
-/*标题下划线*/
-/* .line-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3px; 
-    margin: 15px 0; 
-    position: relative;
-} */
-
+/* 标题下划线样式 */
 .line-container {
     display: flex;
     justify-content: center; /* 水平居中对齐 */
     position: relative; /* 使子元素可以绝对定位 */
 }
-
 
 .line {
     margin: 0; /* 移除之前的margin */
@@ -402,7 +330,6 @@ main {
     width: 280px; /* 粗线宽度 */
     height: 3px; /* 粗线高度 */
     background-color: #f8931f; /* 粗线颜色 */
-
 }
 
 /* 英雄区域样式 */
@@ -433,7 +360,7 @@ main {
     opacity: 0.9;
 }
 
-/* 关于我们部分 */
+/* 关于我们部分样式 */
 .about-section {
     padding: 5rem 0;
     background: var(--light-bg);
@@ -451,7 +378,7 @@ main {
     margin: 0 auto;
 }
 
-/* 工作展示部分 */
+/* 工作展示部分样式 */
 .work-section {
     padding: 5rem 0;
     background: white;
@@ -495,7 +422,7 @@ main {
     opacity: 0.8;
 }
 
-/* 报告部分 */
+/* 报告部分样式 */
 .reports-section {
     padding: 5rem 0;
     background: var(--light-bg);
@@ -515,99 +442,7 @@ main {
     margin-top: 2rem;
 }
 
-/* 页脚样式 */
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 40px 0;
-    margin-left: 60px;
-    width: calc(100% - 60px);
-    transition: margin-left 0.3s ease, width 0.3s ease;
-}
 
-.navbar:hover ~ footer {
-    margin-left: 250px;
-    width: calc(100% - 250px);
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 20px;
-}
-
-.footer-logo img {
-    max-width: 200px;
-    height: auto;
-}
-
-.footer-contact-info {
-    flex: 1;
-}
-
-.contact-item {
-    margin-bottom: 15px;
-}
-
-.contact-item span {
-    display: block;
-    color: #fff;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-.contact-item p {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 14px;
-    line-height: 1.5;
-    margin: 0;
-}
-
-.footer-qr-codes {
-    display: flex;
-    gap: 20px;
-}
-
-.qr-code {
-    text-align: center;
-}
-
-.qr-code img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-}
-
-.qr-code p {
-    color: #fff;
-    font-size: 12px;
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    footer {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-logo {
-        margin-bottom: 30px;
-    }
-
-    .footer-qr-codes {
-        margin-top: 30px;
-    }
-}
 
 /* 响应式设计 */
 @media (max-width: 768px) {
@@ -685,7 +520,6 @@ footer {
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 }
-
 
 /* 通用部分样式 */
 .section {
@@ -804,7 +638,6 @@ h2 {
     padding: 20px;
 }
 
-
 /* Who We Are Section */
 #who-we-are {
     padding: 60px 0;
@@ -864,6 +697,7 @@ h2 {
     overflow: hidden;
     border-radius: 8px;
 }
+
 .member-card:hover .member-info {
     opacity: 0;
     transition: opacity 0.1s ease;
@@ -874,7 +708,6 @@ h2 {
     transform: translateY(-100%);
     transition: transform 0.3s ease;
 }
-
 
 .member-card img {
     width: 100%;
@@ -900,11 +733,11 @@ h2 {
     color: #666;
     font-size: 14px;
 }
+
 .member-info .description p {
     color: #666;
     font-size: 14px;
 }
-
 
 .member-info-out{
     display: none;
@@ -917,6 +750,7 @@ h2 {
     background: rgba(255, 255, 255, 0.5); /* 设置为半透明白色 */
     overflow: hidden;
 }
+
 .member-info-out h4 {
     color: #333;
     margin-bottom: 5px;
@@ -926,6 +760,7 @@ h2 {
     color: #666;
     font-size: 14px;
 }
+
 .member-info-out .description p {
     color: #666;
     font-size: 14px;
@@ -1033,30 +868,6 @@ h2 {
 }
 
 
-
-
-/* 响应式布局调整 */
-@media (max-width: 768px) {
-    .section {
-        padding: 40px 0;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    .services-grid,
-    .news-grid,
-    .reports-grid,
-    .team-members {
-        grid-template-columns: 1fr;
-    }
-
-    .service-item img,
-    .news-item img {
-        height: 180px;
-    }
-}
 
 /* Swiper Styles */
 .swiper-container {
@@ -1279,7 +1090,6 @@ h2 {
         grid-template-columns: 1fr;
     }
 }
-
 
 /* where-we-are Section */
 #where-we-are {
