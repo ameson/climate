@@ -332,33 +332,7 @@ main {
     background-color: #f8931f; /* 粗线颜色 */
 }
 
-/* 英雄区域样式 */
-.hero {
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    padding-top: 60px;
-}
 
-.hero-content {
-    max-width: 800px;
-    padding: 0 20px;
-}
-
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-
-.hero-content p {
-    font-size: 1.5rem;
-    opacity: 0.9;
-}
 
 /* 关于我们部分样式 */
 .about-section {
@@ -527,9 +501,9 @@ main {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1650px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0;
 }
 
 h2 {
@@ -689,7 +663,7 @@ h2 {
 .members-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 70px;
 }
 
 .member-card {
@@ -698,16 +672,7 @@ h2 {
     border-radius: 8px;
 }
 
-.member-card:hover .member-info {
-    opacity: 0;
-    transition: opacity 0.1s ease;
-}
 
-.member-card:hover .member-info-out {
-    display: block;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease;
-}
 
 .member-card img {
     width: 100%;
@@ -742,13 +707,27 @@ h2 {
 .member-info-out{
     display: none;
     position: absolute;
-    bottom: -390px;
+    bottom: 0;
     left: 0;
     width: 100%;
-    transition: transform 0.3s ease;
+    height: 100%;
+    transition: transform 0.5s ease;
     padding: 15px;
-    background: rgba(255, 255, 255, 0.5); /* 设置为半透明白色 */
+    background: rgba(255, 255, 255); /* 设置为半透明白色 */
+    opacity: 0;
     overflow: hidden;
+    transform: translateY(20px); /* 设置初始位置 */
+}
+
+.member-card:hover .member-info {
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+.member-card:hover .member-info-out {
+    display: block;
+    transform: translateY(0); 
+    opacity: 0.5;
 }
 
 .member-info-out h4 {
