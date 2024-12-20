@@ -6,9 +6,10 @@
     <title>Climate Risk Horizons</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8.3.2/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper@8.3.2/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMpYy2f2w5gF4z5F5V5g5F5V5g5F5V5g5F5" crossorigin="anonymous">
+    
 </head>
 <body>
     <header>
@@ -65,10 +66,6 @@
             <div class="swiper-container">
                 <div class="swiper mySwiper2" id="gallery">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            
-                            
-                            <img src="https://dummyimage.com/1790x900" /></div>
                         <div class="swiper-slide"><img src="https://dummyimage.com/1790x900" /></div>
                         <div class="swiper-slide"><img src="https://dummyimage.com/1790x900" /></div>
                         <div class="swiper-slide"><img src="https://dummyimage.com/1790x900" /></div>
@@ -104,8 +101,7 @@
                     <div class="service-item">
                         <div class="service-content">
                             <h4 class="service-category">Coal-Free Future</h4>
-                            <h3>Shanxi in China</h3>
-                            <p>Accelerating the process of phasing out coal in Shanxi-province with rich coal.</p>
+    
                             <a href="#" class="read-more">READ MORE</a>
                         </div>
                         <div class="service-image">
@@ -115,8 +111,7 @@
                     <div class="service-item reverse">
                         <div class="service-content">
                             <h4 class="service-category">Bridge</h4>
-                            <h3>BRI Direction to Green Energy</h3>
-                            <p>Promote the cooperation between countries participated in "The Belt and Road Initiative" and China.</p>
+                            <h3>Bri Direction towards Green Energy</h3>
                             <a href="#" class="read-more">READ MORE</a>
                         </div>
                         <div class="service-image">
@@ -317,8 +312,8 @@
                         <div class="read-more-lines"></div>
                     </a>
                 </div>
-
-                <div class="contact-section">
+               
+                <div class="contact-section">                  
                     <div class="contact-info">
                         <div class="info-item">
                             <div class="info-icon">
@@ -416,20 +411,22 @@
     <script src="script.js"></script>
 
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var thumbsSwiper  = new Swiper(".mySwiper", {
         spaceBetween: 10,
-        slidesPerView: 4,
+        slidesPerView: 6,
         freeMode: true,
         watchSlidesProgress: true,
         });
         var swiper2 = new Swiper(".mySwiper2", {
         spaceBetween: 10,
+        effect: "slide",
+        loop: true,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
         thumbs: {
-            swiper: swiper,
+            swiper: thumbsSwiper,
         },
         autoplay: {
              stopOnLastSlide: true
