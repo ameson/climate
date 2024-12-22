@@ -1,0 +1,96 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 文章内容样式 */
+.article-container {
+
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 20px 50px;
+    margin-bottom: 5rem;
+}
+
+.article-content{
+    padding:0 15.625rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 响应式样式 */
+@media (max-width: 768px) {
+    .article-container {
+        padding: 15px;
+    }
+
+    .article-content {
+        padding:0 15px
+    }
+
+    .article-content h1 {
+        font-size: 24px;
+    }
+    .article-item {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .article-image {
+        flex: 0 0 auto;
+    }
+
+    .article-info {
+        padding-top: 25px;
+    }
+
+    .article-info h2 {
+        font-size: 20px;
+    }
+
+    .read-more {
+        align-self: flex-start; /* 在移动端左对齐 */
+    }
+}
+
+
+
+
+/* 文章列表样式 */
+.article-list-container{
+    width:100%;
+    box-sizing: border-box;
+}
+
+.article-content h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+
+.article-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+.article-text p {
+    margin-bottom: 20px;
+}
