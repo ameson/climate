@@ -19,7 +19,7 @@
 .thick-line {
     position: absolute; /* 绝对定位 */
     top: -1px; /* 与细线重叠 */
-    width: 280px; /* 粗线宽度 */
+    width: 330px; /* 粗线宽度 */
     height: 3px; /* 粗线高度 */
     background-color: var(--yellow-color); /* 粗线颜色 */
 }
@@ -534,6 +534,9 @@
     display: flex;
     justify-content: center;
 }
+.swiper-slide {
+    position: relative; /* 使子元素可以绝对定位 */
+}
 
 .mySwiper .swiper-wrapper{
     display: flex;
@@ -549,6 +552,28 @@
     cursor: pointer;
     flex: 0 0 114px; /* 确保宽度固定 */
     flex-shrink: 0; /* 防止缩小 */  
+}
+
+.overlay {
+    position: absolute;
+    top: 20px; /* 距离顶部的距离 */
+    left: 20px; /* 距离右侧的距离 */
+    color: white; /* 文字颜色 */
+    text-align: left; /* 文字右对齐 */
+}
+
+.logo {
+    width: 50px; /* 设置 logo 的宽度 */
+    height: auto; /* 高度自动 */
+}
+
+.gallery-title {
+    font-size: 1.5rem; /* 标题字体大小 */
+    margin: 5px 0; /* 上下边距 */
+}
+
+.gallery-description {
+    font-size: 1rem; /* 描述字体大小 */
 }
 
 .mySwiper .swiper-slide img {
@@ -621,9 +646,13 @@
 }
 
 .press-center h3 {
+
+
+
     color: var(--green-color);
-    margin-bottom: 30px;
-    font-size: 32px;
+    font-size: 3.2rem;
+    display: block;
+    flex-basis: 100%
 }
 
 .news-grid {
@@ -769,11 +798,10 @@
     margin-bottom: 10px;
 }
 
-#where-we-are .where-text{
+#where .where-text{
+    margin-top: 20px;
     padding: 10px;
- 
     color: #666;
-
     line-height: 1.6;
     margin-bottom: 40px
 }
