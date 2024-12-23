@@ -117,7 +117,7 @@
 }
 
 .section h4 {
-    font-size: 4.8rem;
+    font-size: 3.6rem;
     margin-bottom: 40px;
 }
 
@@ -191,8 +191,8 @@ h2 {
     padding: 8px 16px;
     color: var(--green-color);
     text-decoration: none;
-    border-radius: 20px;
-    font-size: 32px;
+    border-radius: 40px;
+    font-size: 24px;
     transition: background-color 0.3s;
     margin-top: 0; /* 推到底部 */
     flex-grow: 1; 
