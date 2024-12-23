@@ -127,10 +127,9 @@
     padding: 0;
 }
 
-h2 {
-    font-size:64px;
+.container h2 {
+    font-size:48px;
     color:var(--primary-color);
-
     text-align: center;
 }
 
@@ -188,7 +187,7 @@ h2 {
 .read-more {
     align-self: flex-end; /* 右对齐 */
     display: inline-block;
-    padding: 8px 16px;
+    padding: 2px 32px;
     color: var(--green-color);
     text-decoration: none;
     border-radius: 40px;
