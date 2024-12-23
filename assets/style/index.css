@@ -296,7 +296,7 @@
 .board-members > p {
     margin-bottom: 40px;
     line-height: 1.6;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .members-grid {
@@ -668,7 +668,7 @@
     padding: 0 20px 20px;
     color: var(--green-color);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 /* Report Center Styles */
