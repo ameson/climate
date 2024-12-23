@@ -357,23 +357,9 @@ main {
     flex-grow: 0.5;
 }
 
-.read-more {
-    align-self: flex-end; /* 右对齐 */
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: var(--green-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 14px;
-    transition: background-color 0.3s;
-    margin-top: 0; /* 推到底部 */
-    flex-grow: 1; 
-}
 
-.read-more:hover {
-    background-color: #008c44;
-}
+
+
 
 @media (max-width: 1000px) {
 
