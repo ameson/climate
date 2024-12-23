@@ -709,7 +709,7 @@
     max-width: 1920px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    gap: 5.8rem;
 }
 
 .reoport-container  .report-item {
