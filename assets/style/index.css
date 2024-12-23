@@ -80,7 +80,7 @@
 .work-item h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 3.2rem;
 }
 
 .work-item p {
@@ -132,6 +132,15 @@
     color:var(--primary-color);
     text-align: center;
 }
+
+.main h3 {
+    color: var(--green-color);
+    margin-bottom: 20px;
+    font-size: 3.2rem;
+}
+
+
+
 
 /* What We Do 部分样式 */
 .services-grid {
@@ -187,22 +196,23 @@
 .read-more {
     align-self: flex-end; /* 右对齐 */
     display: inline-block;
-    padding: 2px 32px;
+    padding: 1px 32px;
     color: var(--green-color);
     text-decoration: none;
     border-radius: 40px;
-    font-size: 24px;
+    font-size: 18px;
     transition: background-color 0.3s;
     margin-top: 0; /* 推到底部 */
     flex-grow: 1; 
     border: 1px solid var(--green-color);
+
+    margin-top: 20px;
 }
 
 .read-more:hover {
     background-color: #008c44;
-}
-.read-more:hover {
     text-decoration: underline;
+    color: #fff;
 }
 
 /* 响应式设计 */
@@ -280,12 +290,13 @@
 .board-members h3 {
     color: var(--green-color);
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 3.2rem;
 }
 
 .board-members > p {
     margin-bottom: 40px;
     line-height: 1.6;
+    font-size: 1.6rem;
 }
 
 .members-grid {
@@ -358,6 +369,10 @@
     opacity: 0.5;
 }
 
+.member-info-out h4,.member-info h4 {
+    font-size: 1.8rem;
+}
+
 .member-info-out h4 {
     color: #333;
     margin-bottom: 5px;
@@ -380,7 +395,7 @@
 .cooperative-partners h3 {
     color: var(--green-color);
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 3.2rem;
 }
 
 .cooperative-partners > p {
@@ -431,7 +446,7 @@
 .job-ads h3 {
     color: var(--green-color);
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 3.2rem
 }
 
 .job-content {
@@ -603,13 +618,12 @@
 /* Press Center Styles */
 .press-center {
     margin-bottom: 60px;
-   
 }
 
 .press-center h3 {
     color: var(--green-color);
     margin-bottom: 30px;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .news-grid {
@@ -636,7 +650,7 @@
 
 .news-item h4 {
     padding: 20px 20px 10px;
-    font-size: 18px;
+    font-size: 24px;
     color: #333;
     line-height: 1.4;
 }
@@ -644,7 +658,7 @@
 .news-item p {
     padding: 0 20px;
     color: #666;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -672,7 +686,7 @@
 .reoport-container h3 {
     color: var(--green-color);
     margin-bottom: 30px;
-    font-size: 24px;
+    font-size: 3.2rem;
     display: block;
     flex-basis: 100%
 }
@@ -745,7 +759,7 @@
     padding: 10px;
  
     color: #666;
-    font-size: 16px;
+
     line-height: 1.6;
     margin-bottom: 40px
 }
