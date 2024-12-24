@@ -678,7 +678,8 @@
 
 .news-item img {
     width: 100%;
-    max-width: 550px;
+    height: auto;
+    max-width: 100%;
     max-height: 410px;
     object-fit: cover;
 }
@@ -977,6 +978,7 @@
     .gallery-description {
         font-size: 1rem; /* 调整描述字体大小 */
     }
+    
 }
 
 @media (max-width: 480px) {
@@ -985,5 +987,8 @@
     }
     .gallery-description {
         font-size: 0.9rem; /* 更小屏幕的描述字体大小 */
+    }
+    .mySwiper{
+        display: none;
     }
 }
