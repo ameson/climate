@@ -722,9 +722,10 @@ footer {
   
 
   .read-more {
-    align-self: flex-end; /* 右对齐 */
+    /* align-self: flex-end; */
     display: inline-block;
-    padding: 1px 32px;
+    padding: 1px 20px;
+    text-align: center;
     color: var(--green-color);
     text-decoration: none;
     border-radius: 40px;
@@ -733,6 +734,6 @@ footer {
     margin-top: 0; /* 推到底部 */
     flex-grow: 1; 
     border: 1px solid var(--green-color);
-
+    white-space: nowrap;
     margin-top: 20px;
 }
