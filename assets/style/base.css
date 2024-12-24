@@ -735,5 +735,16 @@ footer {
     flex-grow: 1; 
     border: 1px solid var(--green-color);
     white-space: nowrap;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+
+
+
+     .read-more {
+        font-size: 12px;
+        padding: 1px 10px;
+    }
 }
